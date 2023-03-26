@@ -9,3 +9,6 @@ while (true) {
     }
 }
 console.log(length)
+
+console.log(str.length)
+console.log('Monowar Hossain'.length)
