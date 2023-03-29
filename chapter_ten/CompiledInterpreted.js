@@ -1,4 +1,9 @@
-console.log('this is text')
-console.log('this is text')
-console.log('this is another text')
-console.log('this is another text check')
+function a() {
+    console.log('I am function a')
+}
+function b() {
+    console.log('I am function b')
+}
+
+a()
+b()
