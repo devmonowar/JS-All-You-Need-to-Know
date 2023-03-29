@@ -18,3 +18,5 @@ console.log(obj.sum(5, 6))
 setTimeout(function() {
     console.log(sum(2,8))
 }, 100);
+
+console.log('This is comment')
