@@ -11,3 +11,12 @@ function print(a) {
 }
 
 print(a)
+
+// Creational phase
+// a = undefined
+// newPrint = undefined
+// print = Ref
+
+// Executional phase
+
+a= 100
