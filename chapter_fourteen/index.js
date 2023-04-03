@@ -1,31 +1,37 @@
-function Shape() {
-   
+function extend(Parent, Child) {
+    Child.prototype = Object.create(Shape.prototype)
+    Child.prototype.constructor = Child
+}
+
+function Shape(color) {
+    this.color = color
+}
+
+Shape.prototype.common = function () {
+    console.log('I am Common Method')
 }
 
 
-Shape.prototype = {
-    common: function () {
-        console.log('I am Common Methed')
-    }
-}
-
-function Square(width) {
+function Square(width, color) {
+    Shape.call(this, color)
     this.width = width
 }
 
-Square.prototype = Object.create(Shape.prototype)
+extend(Shape, Square)
 
 Square.prototype.draw = function () {
     console.log('Drawing')
 }
 
-var shape = new Shape()
-var sqr = new Square(45)
 
 
-function Circle() {
-    
+// var shap = new Shape()
+
+var sqr = new Square(45, 'green')
+
+
+function Circle(radius, color) {
+    Shape.call(this, color)
+    this.radius = radius
 }
-Circle.prototype = Object.create(Shape.prototype)
-
-var cricle = new Circle()
+extend(Shape, Circle)
