@@ -11,4 +11,4 @@ var createRect = function (width, height) {
   console.log(rect1);
   
   var rect2 = new createRect(550, 1500).draw();
-  console.log(rect2); 
+  console.log(rect2);
