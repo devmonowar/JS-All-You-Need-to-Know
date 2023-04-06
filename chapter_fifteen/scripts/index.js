@@ -31,21 +31,42 @@
 
 // let add = x => x*x;
 // console.log(add(5))
-console.log('test')
+// console.log('test')
 
 
 
-let obj = {
-    fname: 'Monowar Hossain',
-    print: function(){
-        setTimeout(() => {
-            console.log(this)
-            console.log(`Hello, ${this.fname}`)
-        }, 1000)
-    }
+// let obj = {
+//     fname: 'Monowar Hossain',
+//     print: function(){
+//         setTimeout(() => {
+//             console.log(this)
+//             console.log(`Hello, ${this.fname}`)
+//         }, 1000)
+//     }
+// }
+// obj.print()
+
+
+
+// 148. Object From Entries in Javascript
+
+
+var obj = {
+    a: 10,
+    b: 20,
+    c: 20,
+    d: 20,
+    e: 20,
 }
-obj.print()
+
+console.log(Object.entries(obj))
 
 
+objArr = [
+    ['a', 10],
+    ['b', 20],
+    ['c', 30],
+    ['d', 40],
+]
 
-
+console.log(Object.fromEntries(objArr))
