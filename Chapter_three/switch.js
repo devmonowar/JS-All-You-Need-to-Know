@@ -8,7 +8,7 @@ switch (today) {
         break;
     case 1:
         console.log("today is Monday")
-        break;
+        break; 
     case 2:
         console.log("today is Thusday")
         break;
