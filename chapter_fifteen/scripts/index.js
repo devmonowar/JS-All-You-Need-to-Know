@@ -51,22 +51,53 @@
 // 148. Object From Entries in Javascript
 
 
-var obj = {
-    a: 10,
-    b: 20,
-    c: 20,
-    d: 20,
-    e: 20,
+// var obj = {
+//     a: 10,
+//     b: 20,
+//     c: 20,
+//     d: 20,
+//     e: 20,
+// }
+
+// console.log(Object.entries(obj))
+
+
+// objArr = [
+//     ['a', 10],
+//     ['b', 20],
+//     ['c', 30],
+//     ['d', 40],
+// ]
+
+// console.log(Object.fromEntries(objArr))
+
+// 152. Iterator With Symbol in Javascript
+
+let arr = [1, 2, 3, 4]
+
+let iterate = arr[Symbol.iterator]()
+
+console.log(iterate.next())
+console.log(iterate.next())
+console.log(iterate.next())
+console.log(iterate.next())
+console.log(iterate.next())
+
+
+let str = 'TEXT'
+let iterateText = str[Symbol.iterator]()
+
+console.log(iterateText.next())
+console.log(iterateText.next())
+console.log(iterateText.next())
+console.log(iterateText.next())
+console.log(iterateText.next())
+console.log(iterateText.next())
+
+for (let v of arr) {
+    console.log(v)    
 }
 
-console.log(Object.entries(obj))
-
-
-objArr = [
-    ['a', 10],
-    ['b', 20],
-    ['c', 30],
-    ['d', 40],
-]
-
-console.log(Object.fromEntries(objArr))
+for(let v of 'Monowar Hossain'){
+    console.log(v)
+}
