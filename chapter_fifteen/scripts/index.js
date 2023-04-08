@@ -73,31 +73,91 @@
 
 // 152. Iterator With Symbol in Javascript
 
-let arr = [1, 2, 3, 4]
+// let arr = [1, 2, 3, 4]
 
-let iterate = arr[Symbol.iterator]()
+// let iterate = arr[Symbol.iterator]()
 
-console.log(iterate.next())
-console.log(iterate.next())
-console.log(iterate.next())
-console.log(iterate.next())
-console.log(iterate.next())
+// console.log(iterate.next())
+// console.log(iterate.next())
+// console.log(iterate.next())
+// console.log(iterate.next())
+// console.log(iterate.next())
 
 
-let str = 'TEXT'
-let iterateText = str[Symbol.iterator]()
+// let str = 'TEXT'
+// let iterateText = str[Symbol.iterator]()
 
-console.log(iterateText.next())
-console.log(iterateText.next())
-console.log(iterateText.next())
-console.log(iterateText.next())
-console.log(iterateText.next())
-console.log(iterateText.next())
+// console.log(iterateText.next())
+// console.log(iterateText.next())
+// console.log(iterateText.next())
+// console.log(iterateText.next())
+// console.log(iterateText.next())
+// console.log(iterateText.next())
 
-for (let v of arr) {
-    console.log(v)    
-}
+// for (let v of arr) {
+//     console.log(v)    
+// }
 
-for(let v of 'Monowar Hossain'){
-    console.log(v)
-}
+// for(let v of 'Monowar Hossain'){
+//     console.log(v)
+// }
+
+
+
+// function* generate() {
+//     yield 1,
+//     yield 2,
+//     yield 3,
+//     yield 4
+// }
+
+// let iterate = generate()
+
+// console.log(iterate.next())
+// console.log(iterate.next())
+// console.log(iterate.next())
+// console.log(iterate.next())
+// console.log(iterate.next())
+// console.log(iterate.next())
+
+
+// const myset =  new Set([2, 4, 3, 5])
+
+// myset.add('Hello')
+// myset.add('45')
+// myset.add(4)
+// myset.add(2)
+// myset.add('Hello2')
+
+// console.log(myset)
+// console.log(myset.size)
+// console.log(myset.has(6))
+
+
+// 156. Map in Javascript
+
+
+let map = new Map([
+    ['a', 10],
+    ['b', 20],
+    ['c', 30],
+    ['d', 40],
+])
+
+
+map.set('e', 50)
+
+
+map.delete('c')
+console.log(map.size)
+console.log(map)
+
+console.log(map.get('b'))
+
+console.log(map.keys())
+console.log(map.values())
+
+
+map.forEach((v, k) => {
+    console.log(k, v)
+})
