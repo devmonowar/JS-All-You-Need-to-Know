@@ -135,29 +135,72 @@
 
 
 // 156. Map in Javascript
+// let map = new Map([
+//     ['a', 10],
+//     ['b', 20],
+//     ['c', 30],
+//     ['d', 40],
+// ])
 
 
-let map = new Map([
-    ['a', 10],
-    ['b', 20],
-    ['c', 30],
-    ['d', 40],
-])
+// map.set('e', 50)
 
 
-map.set('e', 50)
+// map.delete('c')
+// console.log(map.size)
+// console.log(map)
+
+// console.log(map.get('b'))
+
+// console.log(map.keys())
+// console.log(map.values())
 
 
-map.delete('c')
-console.log(map.size)
-console.log(map)
-
-console.log(map.get('b'))
-
-console.log(map.keys())
-console.log(map.values())
+// map.forEach((v, k) => {
+//     console.log(k, v)
+// })
 
 
-map.forEach((v, k) => {
-    console.log(k, v)
-})
+// weak set
+// let a= {a: 10}, b= {b: 20}
+
+
+// let set = new Set([a, b])
+
+// a = null
+// console.log(set)
+
+// let arr = [...set]
+// console.log(arr[0])
+
+
+// let weakSet = new WeakSet([a, b, c])
+// a =null
+// // console.log(weakSet.has(c))
+// console.log(weakSet)
+
+// 161. Static Method in Javascript
+
+
+class CreateRect {
+    constructor(width, height) {
+      this.width = width;
+      this.height = height;
+    }
+  
+    draw() {
+      return 'Width is ' + this.width + ' And ' + 'Height is ' + this.height;
+    }
+  
+    static iAmStaticMethod() {
+      return `I am Static Method. I don't know 'This' Keyword`;
+    }
+  }
+  
+  let rect1 = new CreateRect(5, 10).draw();
+  console.log(rect1);
+  
+  // We can call static method without new keywords
+  console.log(CreateRect.iAmStaticMethod());
+  
+  
